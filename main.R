@@ -1,7 +1,7 @@
 data <- read.table("path-to-csv-file.csv", header = FALSE, sep = ",")
 
 if (all(is.numeric(data$V1)) && all(is.numeric(data$V2)) &&
-  !any(is.na(data$V1)) && !any(is.na(podaci$V2))) {
+  !any(is.na(data$V1)) && !any(is.na(data$V2))) {
 
   png("path-to-image-png",
       width = 1920, height = 1080, units = "px", pointsize = 20, bg = "#E9F6FF")
