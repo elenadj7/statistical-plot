@@ -14,12 +14,11 @@ if (all(is.numeric(data$V1)) && all(is.numeric(data$V2)) &&
   axis(2)
 
   grid()
-
+  
   lines(data$V1, data$V2, col = "#3652AD", cex = 2, lwd = 2)
-
-
+  
   dev.off()
 
 } else {
-  cat("Provjerite .csv datoteku!")
+  cat("Check your .csv file!")
 }
